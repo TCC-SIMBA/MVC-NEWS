@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Todas as Notícias</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todas as Notícias</h1>
+        <% noticias.forEach(noticia => { %>
+            <div class="noticia">
+                <h2><%= noticia.titulo %></h2>
+                <img src="<%= noticia.imagem %>" alt="Imagem">
+                <p><%= noticia.detalhes %></p>
+                <a href="<%= '/editar/' + noticia.id %>" class="button">Editar</a>
+                <form action="/excluir/<%= noticia.id %>?_method=DELETE" method="POST" style="display:inline;">
+                    <button type="submit" class="button delete">Excluir</button>
+                </form>                
+            </div>
+        <% }) %>
+        <a href="/" class="button">Voltar</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Últimas Notícias</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Últimas Notícias</h1>
+        <% noticias.forEach(noticia => { %>
+            <div class="noticia">
+                <h2><%= noticia.titulo %></h2>
+                <img src="<%= noticia.imagem %>" alt="Imagem da notícia">
+                <p><%= noticia.detalhes %></p>
+            </div>
+        <% }) %>
+        <a href="/listar" class="button">Ver todas as notícias</a>
+        <a href="/criar" class="button">Adicionar notícia</a>
+    </div>
+
+</body>
+</html>
