@@ -1,26 +1,30 @@
 [
   {
-    "titulo": "Futebol",
-    "imagem": "https://static.mundoeducacao.uol.com.br/mundoeducacao/2021/07/pes-com-chuteiras-disputando-por-bola-em-campo-de-futebol.jpg",
-    "detalhes": "Futebol é top\r\n",
-    "data": "2025-03-15T17:08:04.726Z"
+    "id": 1,
+    "titulo": "teste",
+    "imagem": "https://tucurui.ifpa.edu.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
+    "detalhes": "ajaja",
+    "data": "2025-03-16T15:02:33.041Z"
   },
   {
-    "titulo": "Maquiagem",
-    "imagem": "https://certificadocursosonline.com/wp-content/uploads/2017/10/Capa-do-curso-de-maquiagem-online.jpg",
-    "detalhes": "Maquiagem top\r\n",
-    "data": "2025-03-15T17:08:42.497Z"
+    "id": 2,
+    "titulo": "Vingadores: Doomsday e Guerras Secretas são um novo começo no MCU",
+    "imagem": "https://cinebuzz.com.br/media/uploads/2025/02/vingadores-doomsday-e-guerras-secretas-serao-filmados-em-sequencia-confirmam-diretores.jpg",
+    "detalhes": "Em entrevista, os Irmãos Russo revelaram que tanto Vingadores: Doomsday quanto Vingadores: Guerras Secretas serão “uma história de um novo começo” na Marvel.  “Contamos o fim de uma história com Ultimato e agora mostraremos o início de uma nova”, revelou Joe Russo.  Os dois novos longas se chamarão Vingadores: Doomsday (marcado para maio de 2026) e Vingadores: Guerras Secretas (marcado para maio de 2027). Doomsday terá ainda o retorno de Robert Downey Jr., mas não como Homem de Ferro, e sim como Doutor Destino.",
+    "data": "2025-03-16T17:32:23.838Z"
   },
   {
-    "titulo": "Bolsonaro",
-    "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jair_Bolsonaro_2019_Portrait_%283x4_cropped%29.jpg/1200px-Jair_Bolsonaro_2019_Portrait_%283x4_cropped%29.jpg",
-    "detalhes": "Jair Messias Bolsonaro\r\n",
-    "data": "2025-03-15T17:09:22.172Z"
+    "id": 3,
+    "titulo": "Todo Mundo em Pânico 6 | Regina Hall indica que pode fazer continuação",
+    "imagem": "https://ovicio.com.br/wp-content/uploads/2024/11/20241107-ovicio-regina-hall-todo-mundo-em-panico.webp",
+    "detalhes": "Regina Hall voltou a acenar para a possibilidade de trabalhar em Todo Mundo em Pânico 6. Durante uma entrevista para o Entertainment Tonight, a atriz falou sobre os rumores de sua escalação para a continuação. \r\n\r\n\"Digo, é o que eu tenho ouvido, então vamos ver\", disse Hall na entrevista sobre os boatos. Ela também falou sobre a sua experiência na franquia, em especial o primeiro capítulo: \"Foi muito divertido. Foi meu primeiro filme que saiu em todos os cinemas, então foi um negócio muito diferente, muito importante para mim. E eu era fã do Kenan [Ivory Wayans] e dos Wayans, então foi um sonho transformado em realidade.\" Marlon Wayans, Shawn Wayans e o diretor Keenen Ivory Wayans estarão de volta para o reboot.",
+    "data": "2025-03-16T17:36:03.196Z"
   },
   {
-    "titulo": "Google",
-    "imagem": "https://t.ctcdn.com.br/t_kuAtuj3qpV2DVpBvVYSHOIwco=/1080x1080/smart/i606944.png",
-    "detalhes": "google top",
-    "data": "2025-03-15T17:13:42.314Z"
+    "id": 4,
+    "titulo": "Pânico | Mikey Madison pede desculpas aos fãs por ter matado personagem clássico",
+    "imagem": "https://cinepop.com.br/wp-content/uploads/2024/12/panico.jpg",
+    "detalhes": "Quando entrou na franquia Pânico, Mikey Madison tinha 23 anos, 3 a menos do que o longa original, e logo de cara já deixou seu nome marcado, ao eliminar um dos personagens clássicos dos longas: o xerife Dewey Riley. Em entrevista recente ao Collider, ela contou que a recepção que recebeu dos fãs após a estreia na trama não foi das melhores:\r\n\r\n\"Lembro de ter ficado meio triste porque pensei: ‘Ah, que personagem incrível. Vai ser triste vê-lo partir.’ E só depois percebi o quanto foi devastador para tantas pessoas. As pessoas vêm até mim e dizem: ‘Eu odeio que isso tenha acontecido. Estou brava com você.’ E eu fico tipo: ‘Sinto muito, eu não escrevi o roteiro!’ Eu não queria fazer isso\".",
+    "data": "2025-03-16T17:39:53.573Z"
   }
 ]

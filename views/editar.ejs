@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <title>Editar Notícia</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Editar Notícia</h1>
-        <form action="/editar/<%= noticia.id %>" method="POST">
-            <input type="text" name="titulo" value="<%= noticia.titulo %>" required>
-            <input type="text" name="imagem" value="<%= noticia.imagem %>" required>
-            <textarea name="detalhes" required><%= noticia.detalhes %></textarea>
-            <button type="submit">Salvar Alterações</button>
-        </form>
-        <a href="/listar" class="button">Cancelar</a>
+        <header class="header">
+            <a href="#" class="logo fa-solid fa-ticket"> <span class="logo-text">CineVerso</span></a>
+            <nav class="navbar">
+                <a href="/" class="nav-link">Início</a>
+                <a href="/listar" class="nav-link">Notícias</a>
+                <a href="/criar" class="nav-link">Adicionar notícias</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-content">
+                <h1 class="title">Editar Notícia</h1>
+                <form action="/editar/<%= noticia.id %>" method="POST">
+                    <input class="form-input" type="text" name="titulo" value="<%= noticia.titulo %>" required>
+                    <input class="form-input" type="text" name="imagem" value="<%= noticia.imagem %>" required>
+                    <textarea class="form-input" name="detalhes" required><%= noticia.detalhes %></textarea>
+                    <button class="button" type="submit">Salvar Alterações</button>
+                </form>
+                <a href="/listar" class="button">Cancelar</a>
+            </section>
+        </main>
     </div>
+
 </body>
+
 </html>
