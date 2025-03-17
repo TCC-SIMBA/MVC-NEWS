@@ -10,20 +10,20 @@ exports.mostrarHome = (req, res) => {
 //lista 
 exports.listarNoticias = (req, res) => {
     const noticias = Noticia.listarTodas();
-    res.render("listar", { noticias });
+    res.render("listar", { noticias }); //mostra a página com a lista
 };
 
 //Mostra o formulário para criar uma nova 
 exports.formCriarNoticia = (req, res) => {
-    res.render("criar");
+    res.render("criar"); //mostra a página para escrever uma nova notícia
 };
 
 //Cria uma nova notícia
 exports.criarNoticia = (req, res) => {
-    const { titulo, imagem, detalhes } = req.body;
+    const { titulo, imagem, detalhes } = req.body; //pega os dados do formulário
     const noticia = new Noticia(null, titulo, imagem, detalhes);
     noticia.salvar();
-    res.redirect("/");
+    res.redirect("/"); //volta para a página inicial
 };
 
 //Mostra o formulário para edição
@@ -31,7 +31,7 @@ exports.formEditarNoticia = (req, res) => {
     const id = parseInt(req.params.id); // Pega o ID da notícia da URL
     const noticia = Noticia.buscarPorId(id);
     if (!noticia) {
-        return res.status(404).send("Notícia não encontrada");
+        return res.status(404).send("Notícia não encontrada"); //se a notícia não for encontrada, mostra erro
     }
     res.render("editar", { noticia });
 };
@@ -39,8 +39,8 @@ exports.formEditarNoticia = (req, res) => {
 //Atualiza uma notícia existente
 exports.editarNoticia = (req, res) => {
     const id = parseInt(req.params.id);
-    const { titulo, imagem, detalhes } = req.body;
-    Noticia.atualizar(id, titulo, imagem, detalhes);
+    const { titulo, imagem, detalhes } = req.body; //pega os novos dados do formulário
+    Noticia.atualizar(id, titulo, imagem, detalhes); //atualiza no banco de dados
     res.redirect("/listar"); // Volta para a lista de notícias
 };
 

@@ -18,6 +18,7 @@ function salvarNoticias(noticias) {
     fs.writeFileSync(filePath, JSON.stringify(noticias, null, 2)); //Salva  formatado
 }
 
+//Classe para padronizar
 class Noticia {
     constructor(id, titulo, imagem, detalhes) {
         this.id = id;
@@ -27,16 +28,18 @@ class Noticia {
         this.data = new Date();
     }
 
-    // Pega as últimas duas adicionadas
+    //Pega as últimas duas adicionadas
     static listarUltimas() {
         const noticias = carregarNoticias();
         return noticias.reverse().slice(0, 2); //Reverte a ordem
     }
 
+    //pega todas as notícias
     static listarTodas() {
         return carregarNoticias().reverse(); //Retorna as notícias na ordem mais recente
     }
 
+    //busca po ID
     static buscarPorId(id) {
         const noticias = carregarNoticias();
         return noticias.find(noticia => noticia.id === id);
@@ -45,9 +48,10 @@ class Noticia {
     //Salvando
     salvar() {
         const noticias = carregarNoticias();
+        //define um ID novo para a notícia
         this.id = noticias.length > 0 ? noticias[noticias.length - 1].id + 1 : 1;
-        noticias.push(this);
-        salvarNoticias(noticias);
+        noticias.push(this); //adicionou pelo ID
+        salvarNoticias(noticias); //salva o aqrquivo no JSON
     }
 
      //Atualizando
@@ -56,15 +60,15 @@ class Noticia {
         const index = noticias.findIndex(noticia => noticia.id === id); //Procura a posição da notícia
         if (index !== -1) {
             noticias[index] = { id, titulo, imagem, detalhes, data: new Date() };
-            salvarNoticias(noticias); // Salva as mudanças
+            salvarNoticias(noticias); //Salva as mudanças
         }
     }
 
       //Exclui uma notícia pelo ID
     static excluir(id) {
         let noticias = carregarNoticias();
-        noticias = noticias.filter(noticia => noticia.id !== id);
-        salvarNoticias(noticias);
+        noticias = noticias.filter(noticia => noticia.id !== id); //remove pelo ID informado
+        salvarNoticias(noticias); //Salva a nova lista no arquivo
     }
 }
 
