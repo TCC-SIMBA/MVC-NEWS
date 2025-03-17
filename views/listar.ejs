@@ -32,7 +32,9 @@
                             <%= noticia.detalhes %>
                         </p>
                         <a href="/editar/<%= noticia.id %>" class="button edit-button">Editar</a>
-                        <a href="/deletar/<%= noticia.id %>" class="button delete-button">Excluir</a>
+                        <form action="/excluir/<%= noticia.id %>" method="get">
+                            <button type="submit" class="button delete-button">Excluir</button>
+                        </form>  
                     </div>
                     <% }) %>
             </section>

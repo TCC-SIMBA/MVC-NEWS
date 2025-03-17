@@ -8,7 +8,7 @@ router.get("/criar", noticiaController.formCriarNoticia);
 router.post("/criar", noticiaController.criarNoticia);
 router.get("/editar/:id", noticiaController.formEditarNoticia);
 router.post("/editar/:id", noticiaController.editarNoticia);
-router.delete("/excluir/:id", noticiaController.excluirNoticia);
+router.get("/excluir/:id", noticiaController.excluirNoticia);
 
 
 module.exports = router;
