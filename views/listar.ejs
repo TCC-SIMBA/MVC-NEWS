@@ -23,7 +23,7 @@
             <section class="section-content">
                 <h1 class="title">Todas as Notícias</h1>
                 <% noticias.forEach(noticia=> { %>
-                    <div class="news">
+                    <div class="news" id="<%= noticia.id%>">
                         <h2 class="news-title">
                             <%= noticia.titulo %>
                         </h2>
@@ -32,12 +32,20 @@
                             <%= noticia.detalhes %>
                         </p>
                         <a href="/editar/<%= noticia.id %>" class="button edit-button">Editar</a>
-                        <a href="/deletar/<%= noticia.id %>" class="button delete-button">Excluir</a>
+                        <button onclick=deletarNoticia(<%= noticia.id %>) class="button delete-button">Excluir</a>
                     </div>
                     <% }) %>
             </section>
         </main>
     </div>
 </body>
+
+<script>
+    function deletarNoticia(id){
+        fetch(`/excluir/${id}`, {method: 'DELETE'}).then(() => {
+            document.getElementById(`${id}`).remove();
+        });
+    }
+</script>
 
 </html>

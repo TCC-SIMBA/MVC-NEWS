@@ -40,5 +40,5 @@ exports.editarNoticia = (req, res) => {
 exports.excluirNoticia = (req, res) => {
     const id = parseInt(req.params.id);
     Noticia.excluir(id);
-    res.redirect("/listar");
+    res.sendStatus(204);
 };
