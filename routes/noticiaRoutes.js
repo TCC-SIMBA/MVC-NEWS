@@ -1,7 +1,10 @@
 const express = require("express");
 const router = express.Router();
+
+//Importa o controller de notícias
 const noticiaController = require("../controllers/noticiaController");
 
+//cria todas as rotas necessárias
 router.get("/", noticiaController.mostrarHome);
 router.get("/listar", noticiaController.listarNoticias);
 router.get("/criar", noticiaController.formCriarNoticia);
